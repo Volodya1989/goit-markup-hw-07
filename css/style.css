@@ -435,11 +435,18 @@ p {
 }
 .value-item:not(:last-child),
 .about-item:not(:last-child),
-.team-member:not(:last-child),
+/* .team-member:not(:last-child), */
 .customer-item:not(:last-child),
 .social-item:not(:last-child) {
   margin-right: var(--margin-24);
 }
+
+
+/* .team-member:not(:last-child){
+  margin-right: var(--margin-24);
+} */
+
+
 .footer-social:not(:last-child) {
   margin-right: 16px;
 }
@@ -474,6 +481,9 @@ p {
   justify-content: center;
 } */
 .team-role {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 264px;
   text-align: center;
   padding-top: var(--primary-padding-32);
@@ -487,6 +497,13 @@ p {
   margin-left: 84px; */
   box-shadow: var(--drop-shadow);
   border-radius: 6px;
+  width: 264px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.team-member:not(:last-child){
+  margin-bottom: 72px;
 }
 .svg-a {
   cursor: pointer;
@@ -701,6 +718,8 @@ footer {
 img {
   display: block;
   max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-card:hover,
