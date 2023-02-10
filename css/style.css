@@ -178,6 +178,8 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--bg-ocean-color);
+  display: block;
+  margin-left: 16px;
 }
 
 .navigation a.current {
@@ -446,15 +448,14 @@ p {
   margin-right: var(--margin-24);
 }
 
-.value-item{
+.value-item {
   display: block;
   margin-left: 16px;
   margin-right: 16px;
 }
-.value-item:not(:last-child){
+.value-item:not(:last-child) {
   margin-bottom: 72px;
 }
-
 
 /* .team-member:not(:last-child){
   margin-right: var(--margin-24);
@@ -813,5 +814,3 @@ img {
   display: block;
   text-align: center;
 }
-
-
