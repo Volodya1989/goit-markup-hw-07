@@ -460,8 +460,6 @@ p {
   margin-right: auto;
 }
 
-
-
 .team-description {
   margin-bottom: 8px;
 }
@@ -587,6 +585,17 @@ p {
 }
 .team-member:not(:last-child) {
   margin-bottom: 72px;
+}
+
+@media screen and (min-width: 768px) {
+  .list-team {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .team-member:not(:nth-child(-n + 2)) {
+    margin-bottom: 64px;
+  }
 }
 .svg-a {
   cursor: pointer;
