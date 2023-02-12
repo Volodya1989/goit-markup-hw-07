@@ -886,6 +886,47 @@ img {
   margin-right: auto;
   margin-left: auto;
 }
+@media screen and (min-width: 768px) {
+  .submit-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: inherit;
+  }
+  .subscribe-form {
+    width: 264px;
+    margin-left: 0;
+    margin-right: 24px;
+    margin-left: 100px;
+  }
+  .subscription-section {
+    margin-left: auto;
+  }
+  .label-subscribe {
+    text-align: left;
+    margin-left: 100px;
+  }
+  .submit-wrapper {
+    margin-left: 0;
+  }
+  .btn-subscribe {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .footer-description {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .paired-section {
+    display: flex;
+    justify-content: center;
+  }
+  .social-section {
+    margin-left: 24px;
+  }
+}
+
 .btn-subscribe::after {
   position: absolute;
   content: '';
