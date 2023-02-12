@@ -453,17 +453,14 @@ p {
   margin-bottom: 8px;
 }
 .list-values {
-  /* display: flex;
-  justify-content: center; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .list-values {
-    display: block;
-  }
-}
+
 
 .team-description {
   margin-bottom: 8px;
@@ -508,20 +505,25 @@ p {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1158px) {
   .value-icon {
     display: none;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .paired-values {
-    display: flex;
+@media screen and (max-width: 767px) {
+  .list-values {
+    display: block;
   }
-
-  /* .value-item:nth-last-child(-n + 2) {
-    margin-bottom: 0;
-  } */
+}
+@media screen and (min-width: 768px) and (max-width: 1158px) {
+  .value-item {
+    width: 264px;
+  }
+  .value-item:not(:nth-child(2n)) {
+    margin-right: 24px;
+    margin-left: 0;
+  }
 }
 
 /* .team-member:not(:last-child){
