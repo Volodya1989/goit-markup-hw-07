@@ -23,7 +23,19 @@
         <a href="./index.html" class="logo link"
           >WEB<span class="logo-header">STUDIO</span></a
         >
-        <ul class="navigation list">
+        <button
+          class="btn btn-menu menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <div class="icon-menu">
+            <svg class="svg-menu" width="29" height="18">
+              <use href="./images/icons.svg/close_1.svg#icon-menu"></use>
+            </svg>
+          </div>
+        </button>
+
+        <ul class="navigation list menu-hidden">
           <li class="nav-item">
             <a href="./index.html" class="current link header-links">
               Studio
@@ -37,7 +49,7 @@
           </li>
         </ul>
 
-        <ul class="list contact-list">
+        <ul class="list contact-list menu-hidden">
           <li class="nav-item">
             <a
               href="mailto:info@devstudio.com"
@@ -53,6 +65,7 @@
         </ul>
       </nav>
     </header>
+
     <main>
       <section class="section-one section overlay">
         <div class="container">
@@ -537,6 +550,44 @@
         </div>
       </section>
     </main>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button
+        class="btn btn-mb  js-close-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <div class="icon-close">
+          <svg class="svg-close">
+            <use href="./images/icons.svg/close_1.svg#icon-close"></use>
+          </svg>
+        </div>
+      </button>
+
+      <ul class="navigation list mobile-menu">
+        <li class="nav-item">
+          <a href="./index.html" class="link header-links"> Studio </a>
+        </li>
+        <li class="nav-item">
+          <a href="./portfolio.html" class="link header-links">Portfolio</a>
+        </li>
+        <li class="nav-item mb-current">
+          <a href="" class="link header-links">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="list contact-list mobile-menu">
+        <li class="nav-item">
+          <a href="mailto:info@devstudio.com" class="link contacts header-links"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="tel:+110001111111" class="link contacts header-links"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+      </ul>
+    </div>
     <footer class="footer">
       <ul class="container footer-list footer-section">
         <li class="footer-description">
@@ -610,6 +661,7 @@
         </li>
       </ul>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
