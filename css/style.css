@@ -53,9 +53,11 @@ body {
     width: 480px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1158px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     width: 768px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -527,16 +529,22 @@ p {
     display: block;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1158px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .value-item {
-    width: 264px;
+    width: 356px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
   .value-item:not(:nth-child(2n)) {
     margin-right: 24px;
-    margin-left: 0;
   }
-  .value-item:not(:nth-child(-n+2)) {
+  .value-item:not(:nth-child(-n + 2)) {
     margin-bottom: 0;
+  }
+  .header a.logo {
+    margin-left: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -625,6 +633,20 @@ p {
   }
   .team-member:not(:nth-child(-n + 2)) {
     margin-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .list-team {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .team-member {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .team-member:nth-child(odd) {
+    margin-right: 24px;
   }
 }
 .svg-a {
