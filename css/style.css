@@ -93,6 +93,7 @@ p {
   background-color: rgba(46, 47, 66, 0.4);
   opacity: 1;
   transition: opacity var(--transition-time-and-cubic);
+  overflow-y: scroll;
 }
 .backdrop.is-hidden {
   opacity: 0;
