@@ -93,8 +93,9 @@ body {
 }
 .btn-menu {
   position: absolute;
-  top: -10%;
-  right: 4%;
+  top: 30%;
+  right: 3%;
+ 
 }
 
 .svg-menu {
@@ -124,8 +125,8 @@ body {
     display: none;
   }
   .header a.logo {
-    margin-top: 24px;
-    margin-bottom: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 }
 
@@ -370,7 +371,7 @@ p {
   text-transform: uppercase;
   color: var(--bg-ocean-color);
   display: block;
-  margin-left: 16px;
+  padding-left: 16px;
 }
 
 .navigation a.current {
@@ -541,6 +542,7 @@ p {
 .contact-form {
   width: 100%;
 }
+
 /* .label-form {
   display: flex;
 } */
