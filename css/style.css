@@ -55,7 +55,12 @@ body {
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .container {
-    width: 480px;
+    width: 428px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .list-customers {
+    gap: 16px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -819,9 +824,7 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
-.team-member:not(:last-child) {
-  margin-bottom: 72px;
-}
+
 
 @media screen and (min-width: 768px) {
   .list-team {
@@ -829,22 +832,40 @@ p {
     justify-content: center;
     flex-wrap: wrap;
   }
-  .team-member:not(:nth-child(-n + 2)) {
-    margin-bottom: 64px;
-  }
 }
+
+@media screen and (max-width: 767px) {
+  .team-member:not(:last-child) {
+  margin-bottom: 72px;
+}
+}
+
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .list-team {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
   }
+  
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
   .team-member {
     margin-left: 0;
     margin-right: 0;
   }
-  .team-member:nth-child(odd) {
+  /* .team-member:nth-child(odd) {
     margin-right: 24px;
+  } */
+  /* li .team-member:not(:nth-child(-n + 2)) {
+    margin-bottom: 64px;
+  } */
+  .list-team{
+    gap:64px 24px;
   }
 }
 .svg-a {
@@ -908,14 +929,14 @@ p {
 }
 
 @media screen and (min-width: 426px) and (max-width: 767px) {
-  .list-customers .customer-item {
-    margin-right: 16px;
-  }
   .customer-item:not(:nth-last-child(-n + 2)) {
     margin-bottom: 72px;
   }
   .link-customers {
     width: 190px;
+  }
+  .list-customers {
+    gap: 16px;
   }
 }
 
@@ -979,6 +1000,7 @@ footer {
 
 .footer-list {
   display: block;
+  list-style: none;
   /* display: flex; */
   /* align-items: baseline; */
 }
