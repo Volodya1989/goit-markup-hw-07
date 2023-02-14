@@ -489,6 +489,14 @@ p {
   background-repeat: no-repeat;
 }
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .box {
+    background-image: url(../images/index/bg-people-office_1_2x.jpg);
+  }
+}
+
 .main-title {
   /* font-size: 56px;
   line-height: 1.01; */
