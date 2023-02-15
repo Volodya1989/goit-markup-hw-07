@@ -414,7 +414,6 @@ p {
   text-transform: uppercase;
   color: var(--bg-ocean-color);
   display: block;
-  padding-left: 16px;
   padding-top: 24px;
   padding-bottom: 24px;
 }
