@@ -367,6 +367,34 @@ p {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .section,
+  footer {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .section-one {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .section,
+  footer {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .section-three {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .section-one {
+    padding-top: 112px;
+    padding-bottom: 108px;
+  }
+}
+
 .mobile-menu .nav-item:not(:last-child) {
   margin-right: 0;
 }
@@ -697,9 +725,6 @@ p {
   margin-bottom: 8px;
 }
 .svg-value {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   margin-bottom: 8px;
 }
 
