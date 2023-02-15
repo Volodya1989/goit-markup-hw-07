@@ -95,7 +95,6 @@ body {
   position: absolute;
   top: 30%;
   right: 3%;
- 
 }
 
 .svg-menu {
@@ -541,6 +540,9 @@ p {
 }
 .contact-form {
   width: 100%;
+}
+.contact-form .list {
+  text-align: left;
 }
 
 /* .label-form {
