@@ -56,8 +56,8 @@ body {
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .container {
     width: 428px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .list-customers {
     gap: 16px;
@@ -1027,6 +1027,14 @@ footer {
   background: var(--secondary-color);
   padding-top: 100px;
   padding-bottom: 100px;
+}
+@media screen and (max-width: 1199px) {
+  
+  footer {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  
 }
 
 .section-four {
